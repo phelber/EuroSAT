@@ -20,11 +20,12 @@ If you have used the EuroSAT dataset, please cite the following papers:
 [1] Eurosat: A novel dataset and deep learning benchmark for land use and land cover classification. Patrick Helber, Benjamin Bischke, Andreas Dengel, Damian Borth. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 2019 (under review)
 
 ```
-@article{helber2017eurosat,
+@article{helber2019eurosat,
   title={Eurosat: A novel dataset and deep learning benchmark for land use and land cover classification},
   author={Helber, Patrick and Bischke, Benjamin and Dengel, Andreas and Borth, Damian},
-  journal={arXiv preprint arXiv:1709.00029},
-  year={2017}
+  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+  year={2019},
+  publisher={IEEE}
 }
 ```
 
