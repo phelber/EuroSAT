@@ -10,8 +10,8 @@ In this study, we address the challenge of land use and land cover classificatio
 
 ##### Paper
 * [Full-text Paper](https://www.researchgate.net/publication/319463676_EuroSAT_A_Novel_Dataset_and_Deep_Learning_Benchmark_for_Land_Use_and_Land_Cover_Classification)
-* [EuroSAT Dataset (RGB)](http://madm.dfki.de/files/sentinel/EuroSAT.zip)
-* [EuroSAT Dataset (MS)](http://madm.dfki.de/files/sentinel/EuroSATallBands.zip)
+* [EuroSAT Dataset (RGB)](https://madm.dfki.de/files/sentinel/EuroSAT.zip)
+* [EuroSAT Dataset (MS)](https://madm.dfki.de/files/sentinel/EuroSATallBands.zip)
 
 ### References
 
