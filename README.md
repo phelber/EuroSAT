@@ -6,12 +6,15 @@
 
 In this study, we address the challenge of land use and land cover classification using Sentinel-2 satellite images. The Sentinel-2 satellite images are openly and freely accessible provided in the Earth observation program Copernicus. We present a novel dataset based on Sentinel-2 satellite images covering 13 spectral bands and consisting out of 10 classes with in total 27,000 labeled and geo-referenced images. We provide benchmarks for this novel dataset with its spectral bands using state-of-the-art deep Convolutional Neural Network (CNNs). With the proposed novel dataset, we achieved an overall classification accuracy of 98.57\%. The resulting classification system opens a gate towards a number of Earth observation applications. We demonstrate how this classification system can be used for detecting land use and land cover changes and how it can assist in improving geographical maps. The geo-referenced dataset EuroSAT is made publicly available [here](#).
 
-### Download
+### Dataset
+The dataset is available via [Zenodo](https://zenodo.org/record/7711810#.ZAm3k-zMKEA).
 
-##### Paper
-* [Full-text Paper](https://www.researchgate.net/publication/319463676_EuroSAT_A_Novel_Dataset_and_Deep_Learning_Benchmark_for_Land_Use_and_Land_Cover_Classification)
+##### Deprecated Hosting
 * [EuroSAT Dataset (RGB)](https://madm.dfki.de/files/sentinel/EuroSAT.zip)
 * [EuroSAT Dataset (MS)](https://madm.dfki.de/files/sentinel/EuroSATallBands.zip)
+
+### Paper
+* The full-text PDF is available via [ResearchGate](https://www.researchgate.net/publication/319463676_EuroSAT_A_Novel_Dataset_and_Deep_Learning_Benchmark_for_Land_Use_and_Land_Cover_Classification).
 
 ### References
 
@@ -41,3 +44,7 @@ If you have used the EuroSAT dataset, please cite the following papers:
   organization={IEEE}
 }
 ```
+
+### License
+The dataset is licensed under the MIT license. In general, Sentinel data is free and open to the public under EU law. Please consider the [Copernicus Sentinel Data Terms and Conditions](https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice) when using Copernicus Sentinel data.
+
