@@ -1,0 +1,19 @@
+{
+  "variant": "ema",
+  "internal_test_acc": 0.9879012345679012,
+  "kaggle_mean_confidence": 0.8144453167915344,
+  "kaggle_view_agreement": 0.8440453686200378,
+  "kaggle_predicted_mix_pct": {
+    "AnnualCrop": 9.48,
+    "Forest": 10.14,
+    "HerbaceousVegetation": 9.95,
+    "Highway": 8.77,
+    "Industrial": 6.07,
+    "Pasture": 6.73,
+    "PermanentCrop": 9.17,
+    "Residential": 9.48,
+    "River": 5.93,
+    "SeaLake": 24.29
+  },
+  "kaggle_public_score": 0.71548
+}

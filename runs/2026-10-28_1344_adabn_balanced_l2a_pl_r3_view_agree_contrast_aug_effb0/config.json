@@ -1,0 +1,95 @@
+{
+  "run_name": "2026-10-28_1344_adabn_balanced_l2a_pl_r3_view_agree_contrast_aug_effb0",
+  "description": "E09a setup trained on downloaded Level-2A images of the EuroSAT patches (no hist_split) + AdaBN balanced",
+  "notebook": "E17_l2a_training",
+  "variant": "E17a",
+  "model": "efficientnet_b0",
+  "bands": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B8A",
+    "B09",
+    "B11",
+    "B12"
+  ],
+  "corrections": [],
+  "source": "l2a",
+  "train": {
+    "epochs": 20,
+    "batch_size": 128,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "label_smoothing": 0.1,
+    "patience": 5,
+    "augment": true,
+    "photometric": {
+      "contrast": [
+        0.9,
+        1.5
+      ],
+      "band_contrast": [
+        0.9,
+        1.15
+      ],
+      "brightness": [
+        0.93,
+        1.07
+      ],
+      "p": 0.8
+    },
+    "extra": {}
+  },
+  "split": "split_seed42",
+  "n_l2a_patches": 26902,
+  "pseudo_labels": {
+    "teacher": "adabn_balanced_pseudo_label_r2_x2_contrast_aug_hist_split_effb0",
+    "selection": "view_agree",
+    "caps": {
+      "SeaLake": 400
+    },
+    "repeat": 2,
+    "n_images": 2948
+  },
+  "n_params": 4022950,
+  "device": "Apple GPU (MPS)",
+  "normalizer": {
+    "mean": [
+      485.82094419651753,
+      601.9602954390832,
+      846.4865344011924,
+      883.1481565067362,
+      1261.1470462447824,
+      2067.264390533887,
+      2386.8995552206893,
+      2487.352120854448,
+      2584.0410265731266,
+      2601.261900159417,
+      2089.0961594439473,
+      1449.091001190077
+    ],
+    "std": [
+      500.4040011193355,
+      599.2580034524689,
+      650.3239787362998,
+      799.5134345886041,
+      798.6152120476991,
+      1034.175035445354,
+      1211.0212256067778,
+      1287.1161975194748,
+      1308.6732511196965,
+      1273.4453739524627,
+      1153.9654830652728,
+      989.2650172754184
+    ]
+  },
+  "seed": 42,
+  "base_run": "runs/2026-10-28_1344_l2a_pl_r3_view_agree_contrast_aug_effb0",
+  "method": "adabn_balanced",
+  "n_bn_images": 3602
+}

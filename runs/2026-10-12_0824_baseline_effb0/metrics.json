@@ -1,0 +1,20 @@
+{
+  "val_acc": 0.9896296296296296,
+  "internal_test_acc": 0.9879012345679012,
+  "best_epoch": 15,
+  "kaggle_mean_confidence": 0.7737672328948975,
+  "kaggle_predicted_mix_pct": {
+    "AnnualCrop": 5.48,
+    "Forest": 5.81,
+    "HerbaceousVegetation": 29.42,
+    "Highway": 6.81,
+    "Industrial": 5.98,
+    "Pasture": 7.02,
+    "PermanentCrop": 4.61,
+    "Residential": 6.45,
+    "River": 4.28,
+    "SeaLake": 24.15
+  },
+  "kaggle_public_score": 0.56481,
+  "notes": "Also tried: Kaggle images normalised with their own mean/std -> 0.47824 (over-corrects because the test set has more water)."
+}

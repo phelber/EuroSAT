@@ -1,0 +1,16 @@
+{
+  "kaggle_predicted_mix_pct": {
+    "AnnualCrop": 9.57,
+    "Forest": 9.64,
+    "HerbaceousVegetation": 9.62,
+    "Highway": 7.96,
+    "Industrial": 7.84,
+    "Pasture": 6.4,
+    "PermanentCrop": 7.99,
+    "Residential": 9.52,
+    "River": 7.77,
+    "SeaLake": 23.68
+  },
+  "answers_changed_vs_e15d": 206,
+  "kaggle_public_score": null
+}

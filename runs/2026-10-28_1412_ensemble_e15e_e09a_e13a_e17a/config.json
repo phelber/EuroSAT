@@ -1,0 +1,12 @@
+{
+  "run_name": "2026-10-28_1412_ensemble_e15e_e09a_e13a_e17a",
+  "notebook": "E15_ensemble",
+  "variant": "E15e",
+  "method": "ensemble (mean of TTA probabilities)",
+  "description": "average of E09a, E13a+AdaBN, E17a",
+  "members": [
+    "runs/2026-10-15_1829_pl_r3_view_agree_contrast_aug_hist_split_effb0",
+    "runs/2026-10-28_0932_adabn_balanced_indices_pl_r3_view_agree_contrast_aug_hist_split_effb0",
+    "runs/2026-10-28_1344_l2a_pl_r3_view_agree_contrast_aug_effb0"
+  ]
+}

@@ -1,0 +1,5 @@
+,spectral gap (land),classifier % brightness,classifier % contrast,classifier % spectrum,classifier % all three
+hist_split (current),0.146,53.7,84.3,97.9,98.7
+A · FDA,0.151,53.8,69.8,97.7,98.7
+B · spectral matching,0.02,54.0,59.2,81.0,82.9
+C · low-freq equaliser,0.144,53.7,74.8,97.5,98.5

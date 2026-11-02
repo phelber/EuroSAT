@@ -1,0 +1,17 @@
+{
+  "kaggle_mean_confidence": 0.8495959639549255,
+  "kaggle_view_agreement": 0.9151701323251418,
+  "kaggle_predicted_mix_pct": {
+    "AnnualCrop": 9.62,
+    "Forest": 10.59,
+    "HerbaceousVegetation": 9.59,
+    "Highway": 8.15,
+    "Industrial": 6.17,
+    "Pasture": 6.55,
+    "PermanentCrop": 8.96,
+    "Residential": 9.81,
+    "River": 6.29,
+    "SeaLake": 24.29
+  },
+  "kaggle_public_score": null
+}

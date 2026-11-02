@@ -1,5 +1,6 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
+*.pyc
 *.py[cod]
 *$py.class
 
@@ -83,7 +84,8 @@ celerybeat-schedule
 
 # Environments
 .env
-.venv
+*.env
+.venv/
 env/
 venv/
 ENV/
@@ -102,3 +104,27 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Data
+data/*
+!data/eurosat/
+!data/kaggle/
+data/eurosat/*
+data/kaggle/*
+!data/eurosat/.gitkeep
+!data/kaggle/.gitkeep
+
+# Kaggle credentials / secrets
+kaggle.json
+
+# Local files
+.DS_Store
+.idea/
+
+# Model weights: excluded by default. Weights of runs submitted to Kaggle are added explicitly
+# with `git add -f runs/<run>/model.pt` (once tracked, Git keeps tracking them).
+runs/*/model.pt
+runs/*/variants/*.pt
+
+# Course material and papers (not ours to redistribute)
+*.pdf

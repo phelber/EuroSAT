@@ -1,0 +1,6 @@
+,land (mean over bands),water (mean over bands),domain acc % all images,domain acc % land only
+none,0.741,6.672,100.0,100.0
+linear_p2p98,0.258,1.79,90.7,93.0
+hist_all,0.272,0.817,83.8,89.8
+hist_land,0.024,1.981,85.0,87.9
+hist_split,0.024,0.158,83.0,87.9

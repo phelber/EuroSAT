@@ -1,0 +1,107 @@
+{
+  "run_name": "2026-10-12_1214_adabn_balanced_lowfreq_eq_contrast_aug_hist_split_effb0",
+  "model": "efficientnet_b0",
+  "bands": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B8A",
+    "B09",
+    "B11",
+    "B12"
+  ],
+  "seed": 42,
+  "n_params": 4022950,
+  "device": "Apple GPU (MPS)",
+  "normalizer": {
+    "mean": [
+      399.30138516865077,
+      429.58376255580356,
+      696.0367761036706,
+      641.1501607969577,
+      1075.5151294462012,
+      2135.7870218202297,
+      2483.625497685185,
+      2590.3312687045304,
+      2678.736670025215,
+      2667.627427713707,
+      1733.5801979089163,
+      1107.9177180472884
+    ],
+    "std": [
+      310.294026062018,
+      410.6490738955183,
+      483.34325170375763,
+      613.2035248814387,
+      614.1340600527732,
+      1032.349329594499,
+      1257.0842126911364,
+      1345.975399864655,
+      1339.6267537041576,
+      1271.9438188276938,
+      993.9409196015586,
+      814.5064659868262
+    ]
+  },
+  "preprocess": "hist_split",
+  "input_layer": {
+    "type": "low_freq_equalizer",
+    "radius": 0.05,
+    "max_factor": 1.5,
+    "template": [
+      98.72889709472656,
+      131.66470336914062,
+      155.5175018310547,
+      151.6627960205078,
+      183.98190307617188,
+      212.9832000732422,
+      216.77000427246094,
+      206.41299438476562,
+      209.19410705566406,
+      110.88839721679688,
+      194.7908935546875,
+      190.11940002441406
+    ]
+  },
+  "train": {
+    "epochs": 20,
+    "batch_size": 128,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "label_smoothing": 0.1,
+    "patience": 5,
+    "augment": true,
+    "photometric": {
+      "contrast": [
+        0.9,
+        1.5
+      ],
+      "band_contrast": [
+        0.9,
+        1.15
+      ],
+      "brightness": [
+        0.93,
+        1.07
+      ],
+      "p": 0.8
+    },
+    "extra": {}
+  },
+  "split": "split_seed42",
+  "base_run": "runs/2026-10-12_1213_lowfreq_eq_contrast_aug_hist_split_effb0",
+  "method": "adabn_balanced",
+  "bn_statistics_from": "Kaggle land images + water images at the training water share (9.4%)",
+  "n_bn_images": 3574,
+  "description": "E04 + Fourier C: low-frequency equaliser layer + AdaBN balanced",
+  "notebook": "E05_fourier",
+  "corrections": [
+    "hist_split"
+  ],
+  "variant": "E05c"
+}

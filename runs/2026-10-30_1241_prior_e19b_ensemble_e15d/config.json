@@ -1,0 +1,37 @@
+{
+  "run_name": "2026-10-30_1241_prior_e19b_ensemble_e15d",
+  "notebook": "E19_prior_adjustment",
+  "variant": "E19b",
+  "description": "E15d with class weights matching the EuroSAT class mix",
+  "base": "runs/2026-10-28_1412_ensemble_e15d_e09a_e12a_e13a_e17a",
+  "members": [
+    "pl_r3_view_agree_contrast_aug_hist_split_effb0",
+    "adabn_balanced_pl_r4_view_agree_contrast_aug_hist_split_effb0",
+    "adabn_balanced_indices_pl_r3_view_agree_contrast_aug_hist_split_effb0",
+    "l2a_pl_r3_view_agree_contrast_aug_effb0"
+  ],
+  "train_prior": [
+    0.11111,
+    0.11111,
+    0.11111,
+    0.09259,
+    0.09259,
+    0.07407,
+    0.09259,
+    0.11111,
+    0.09259,
+    0.11111
+  ],
+  "em_prior": [
+    0.08411,
+    0.10363,
+    0.09481,
+    0.08275,
+    0.05853,
+    0.07102,
+    0.09585,
+    0.09434,
+    0.056,
+    0.25895
+  ]
+}

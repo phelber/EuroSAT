@@ -1,0 +1,16 @@
+gudhi
+ipykernel
+kaggle
+kagglehub
+matplotlib
+numpy
+pandas
+rasterio
+requests
+scikit-learn
+torch
+torchvision
+tqdm
+pystac-client
+planetary-computer
+shapely

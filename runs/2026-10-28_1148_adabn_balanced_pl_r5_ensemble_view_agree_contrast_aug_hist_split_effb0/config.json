@@ -1,0 +1,95 @@
+{
+  "run_name": "2026-10-28_1148_adabn_balanced_pl_r5_ensemble_view_agree_contrast_aug_hist_split_effb0",
+  "description": "hist_split + contrast aug + pseudo-labels round 5 (E15a ensemble teacher, 8 views agree), 2x + AdaBN balanced",
+  "notebook": "E16_pseudo_labels_ensemble",
+  "variant": "E16a",
+  "model": "efficientnet_b0",
+  "bands": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B8A",
+    "B09",
+    "B11",
+    "B12"
+  ],
+  "corrections": [
+    "hist_split"
+  ],
+  "train": {
+    "epochs": 20,
+    "batch_size": 128,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "label_smoothing": 0.1,
+    "patience": 5,
+    "augment": true,
+    "photometric": {
+      "contrast": [
+        0.9,
+        1.5
+      ],
+      "band_contrast": [
+        0.9,
+        1.15
+      ],
+      "brightness": [
+        0.93,
+        1.07
+      ],
+      "p": 0.8
+    },
+    "extra": {}
+  },
+  "split": "split_seed42",
+  "pseudo_labels": {
+    "teacher": "E15a ensemble: pl_r3_view_agree_contrast_aug_hist_split_effb0, adabn_balanced_pl_r4_view_agree_contrast_aug_hist_split_effb0, adabn_balanced_indices_pl_r3_view_agree_contrast_aug_hist_split_effb0",
+    "selection": "view_agree",
+    "caps": {
+      "SeaLake": 400
+    },
+    "repeat": 2,
+    "n_images": 3275
+  },
+  "n_params": 4022950,
+  "device": "Apple GPU (MPS)",
+  "normalizer": {
+    "mean": [
+      399.30138516865077,
+      429.58376255580356,
+      696.0367761036706,
+      641.1501607969577,
+      1075.5151294462012,
+      2135.7870218202297,
+      2483.625497685185,
+      2590.3312687045304,
+      2678.736670025215,
+      2667.627427713707,
+      1733.5801979089163,
+      1107.9177180472884
+    ],
+    "std": [
+      310.294026062018,
+      410.6490738955183,
+      483.34325170375763,
+      613.2035248814387,
+      614.1340600527732,
+      1032.349329594499,
+      1257.0842126911364,
+      1345.975399864655,
+      1339.6267537041576,
+      1271.9438188276938,
+      993.9409196015586,
+      814.5064659868262
+    ]
+  },
+  "seed": 42,
+  "base_run": "runs/2026-10-28_1147_pl_r5_ensemble_view_agree_contrast_aug_hist_split_effb0",
+  "method": "adabn_balanced",
+  "n_bn_images": 3574
+}

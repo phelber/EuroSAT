@@ -1,0 +1,11 @@
+{
+  "run_name": "2026-10-13_1828_ensemble_e10_shape_topo_pl_r2_x2_contrast_aug_hist_split_effb0",
+  "notebook": "E07_shape_input",
+  "method": "ensemble (mean of TTA probabilities)",
+  "description": "E06c + AdaBN averaged with shape-focused input + topology branch + E06c setup (pseudo-labels r2, 2x) + AdaBN",
+  "members": [
+    "runs/2026-10-12_1626_adabn_balanced_pseudo_label_r2_x2_contrast_aug_hist_split_effb0",
+    "runs/2026-10-13_1827_adabn_balanced_shape_topo_pl_r2_x2_contrast_aug_hist_split_effb0"
+  ],
+  "variant": "E07b"
+}

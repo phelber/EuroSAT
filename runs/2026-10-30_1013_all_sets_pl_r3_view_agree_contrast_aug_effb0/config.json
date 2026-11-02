@@ -1,0 +1,91 @@
+{
+  "run_name": "2026-10-30_1013_all_sets_pl_r3_view_agree_contrast_aug_effb0",
+  "description": "one model on EuroSAT L1C + hist_split, L2A Apr-Oct and L2A Jun-Aug (+ round-3 pseudo-labels 6x)",
+  "notebook": "E18_all_image_sets",
+  "variant": "E18a",
+  "model": "efficientnet_b0",
+  "bands": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B8A",
+    "B09",
+    "B11",
+    "B12"
+  ],
+  "corrections": [],
+  "source": "l1c(hist_split) + l2a + l2a_summer",
+  "train": {
+    "epochs": 12,
+    "batch_size": 128,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "label_smoothing": 0.1,
+    "patience": 4,
+    "augment": true,
+    "photometric": {
+      "contrast": [
+        0.9,
+        1.5
+      ],
+      "band_contrast": [
+        0.9,
+        1.15
+      ],
+      "brightness": [
+        0.93,
+        1.07
+      ],
+      "p": 0.8
+    },
+    "extra": {}
+  },
+  "split": "split_seed42",
+  "pseudo_labels": {
+    "teacher": "adabn_balanced_pseudo_label_r2_x2_contrast_aug_hist_split_effb0",
+    "selection": "view_agree",
+    "caps": {
+      "SeaLake": 400
+    },
+    "repeat": 6,
+    "n_images": 2948
+  },
+  "n_params": 4022950,
+  "device": "Apple GPU (MPS)",
+  "normalizer": {
+    "mean": [
+      480.8912736026907,
+      607.5155762031217,
+      853.6083673210275,
+      878.7654522710286,
+      1270.578159813995,
+      2148.154813825067,
+      2510.075288700976,
+      2593.386358124404,
+      2707.2230535643907,
+      2719.513097183696,
+      2127.844054785198,
+      1454.084315199087
+    ],
+    "std": [
+      340.742228127048,
+      470.5019846940455,
+      536.5337347850295,
+      731.9422841065427,
+      733.4373061966346,
+      998.9241715322285,
+      1207.4202202760077,
+      1283.9081871791545,
+      1318.2273130027606,
+      1283.223999039075,
+      1157.2136621505701,
+      994.2861169322567
+    ]
+  },
+  "seed": 42
+}
